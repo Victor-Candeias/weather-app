@@ -1,5 +1,5 @@
 {
-  "name": "weather-app",
+  "name": "IPMA Weather Application",
   "version": "0.1.0",
   "homepage": "https://Victor-Candeias.github.io/weather-app",
   "private": false,
@@ -13,7 +13,8 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-widgets": "^5.8.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "gh-pages": "^6.0.0"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -40,10 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "dotenv": "^16.3.1",
-    "gh-pages": "^6.0.0",
-    "react-error-overlay": "^6.0.9"
   }
 }
