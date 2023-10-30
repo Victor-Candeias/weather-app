@@ -44,7 +44,7 @@ const Item = (props) => {
     "pt-pt",
     { weekday: "long" }
   );
-  
+
   return (
     <div className={classes.item}>
       <h3>{formattedDate + " " + props.value.forecastDate}</h3>
@@ -58,7 +58,7 @@ const Item = (props) => {
             <img
               alt={props.value.predWindDir}
               src={predWindDir}
-              className={classes.tr_header_img}
+              className={classes.tr_header_img_arrows}
             />
           </td>
           <td>Precipit.</td>
@@ -66,13 +66,17 @@ const Item = (props) => {
             <img
               alt={props.value.idWeatherType}
               src={idWeatherTypeImage}
-              className={classes.tr_header_img}
+              className={classes.tr_header_img_weather}
             />
           </td>
         </tr>
         <tr>
-          <td className={classes.tr_botton}>{props.value.tMin}</td>
-          <td className={classes.tr_botton}>{props.value.tMax}</td>
+          <td className={classes.tr_botton} style={{ color: "rgb(73, 128, 231)" }}>
+            {props.value.tMin}
+          </td>
+          <td className={classes.tr_botton} style={{ color: "red" }}>
+            {props.value.tMax}
+          </td>
           <td className={classes.tr_botton}>{props.value.precipitaProb} %</td>
           <td className={classes.tr_botton}>
             {idWeatherWindSpeed.length !== 0 &&
